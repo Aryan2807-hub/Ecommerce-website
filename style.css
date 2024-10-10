@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo{
+    padding:0 5px 0 5px;
+    height:55px;
+    width: 70px;
+}
+header{
+    display:flex;
+    position: fixed;
+    height:65px;
+    z-index: 10;
+    top:0;
+    width:100%;
+    justify-content: space-between;
+
+    align-items: center;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(47, 206, 100, 0.6);
+
+
+}
+.nav-place{
+    display:flex;
+    height:19px;
+    width: 395px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.nav-place a{
+    
+    position: relative;
+    text-decoration: none;
+    margin-left: 15px;
+    color: #1c5033;
+    font-size: 16px;
+    font-weight: 600;
+    transition:ease-in-out 0.2s;
+
+    
+}
+.nav-place a:hover{
+    color: #088178;
+    font-size: 17.5px;
+    transition:ease-in-out 0.2s;
+
+}
+.nav-place a::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    width: 0;
+    left: 0.5px;
+    height: 3.5px;
+    background-color: #088178;
+    transition: width 0.3s ease-in-out;
+    border-radius: 3px;
+}
+.nav-place a:hover::after{
+    width: 60%;
+}
+/* front page big poster */
+
+#M-poster{
+    display: flex;
+    background-image: url(images/hero4.png);
+    background-size: cover;
+    margin: 60px 0 0 0;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+    box-shadow: 0px 0px 40px rgba(90, 90, 90, 0.616);
+
+}
+#M-poster h1{
+    font-weight: 900;
+    padding-left: 40px;
+    font-size:80px;
+    margin-bottom: -26px;
+}
+.h1c{
+    color: #1e633d;
+     
+}
+#M-poster h2{
+    font-weight: 400;
+    font-size: 70px;
+    padding-left: 40px;
+    margin-bottom: -15px;
+}
+#M-poster h4{
+    color:dimgrey;
+    font-size: 20px;
+    padding-left: 46px;
+    margin-top:10px;
+}
+#M-poster button{
+    background-color: transparent;
+    background-image:url(images/button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    cursor:pointer;
+    font-weight: 700;
+    color: #088178;
+    margin: 0 0 0 50px;
+    transition: all 0.3s ease-in-out;
+}
+#M-poster button:hover{
+    font-size: 22px;
+
+}
+.B-M-poster{
+    display: flex;
+    flex-direction: row;
+
+    justify-content:space-around;
+    align-items: center;
+
+}
+.B-M-poster div{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    border: 1px solid #cce7d0;
+    margin-top: 20px;
+    color: #000000;
+    height: 200px;
+    width: 180px; /* Each div will take 1/6th of the width for a 6-item layout */
+    text-align: center;
+    padding:25px 15px;
+    margin: 15px 0;
+    font-size: small;
+    box-shadow: 0px 0px 40px rgba(90, 90, 90, 0.616);
+    transition: box-shadow 0.3s ;
+    font-weight: 700;
+}
+.B-M-poster div:hover{
+    box-shadow: 0px 0px 40px rgba(47, 206, 100, 0.6);
+}
+/* PRODUCTS */
+.productsHead{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color: rgb(119, 119, 119);
+    align-items: center;
+
+}
+.productsHead h1{
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000;
+
+}
+
+.products-section{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-around;
+    margin:20px,0,0,20px;
+}
+.products span{
+    margin-top: 10px;
+    font-size: small;
+    font-weight: bold;
+    color: grey;
+}
+.products pre{
+    font-weight: 900;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(228, 226, 226);
+    margin-top:50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 0px 40px rgba(90, 90, 90, 0.459);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.products:hover{
+    box-shadow: 0px 0px 40px rgba(90, 90, 90, 0.733);
+
+}
+.products img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.products .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.products .icons .cart{
+    color: #088178;
+    background-color: #c7e9e7;
+    padding: 10px;
+    border-radius:5px;
+    margin-right: -30px;
+}
+.products .icons .stars{
+    color: #e6ae2c;
+    padding: 10px;
+    margin-left: -55px;
+}
+.products .price{
+    color:#1e633d;
+
+}
