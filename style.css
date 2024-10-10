@@ -216,6 +216,10 @@ header{
     border-radius:5px;
     margin-right: -30px;
 }
+.products .icon .cart:hover{
+    border: 2px solid #1e633d;
+    transition: all 0.1s;
+}
 .products .icons .stars{
     color: #e6ae2c;
     padding: 10px;
