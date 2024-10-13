@@ -12,7 +12,7 @@
 header{
     display:flex;
     position: fixed;
-    height:65px;
+    height:80px;
     z-index: 10;
     top:0;
     width:100%;
@@ -20,7 +20,7 @@ header{
 
     align-items: center;
     background-color: #e3e6f3;
-    box-shadow: 0 5px 15px rgba(47, 206, 100, 0.6);
+    box-shadow: 0 5px 15px rgba(47, 206, 100, 0.2);
 
 
 }
@@ -192,7 +192,7 @@ header{
     padding: 30px;
     border: 1px solid #ebebeb;
     box-shadow: 0px 0px 40px rgba(90, 90, 90, 0.459);
-    border-radius: 5px;
+    border-radius: 15px;
     transition: all 0.3s;
 }
 .products:hover{
@@ -229,3 +229,265 @@ header{
     color:#1e633d;
 
 }
+
+
+/*---------------------------------------------------------------- */
+.banner2{
+    display: flex;
+    background-image: url(images/banner/b2.jpg);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: #cce7d0;
+    padding: 20px 0 20px 0;
+    margin-top: 40px;
+    margin-left: -0.5px;
+    margin-bottom: 20px;
+    
+}
+.banner2 h5,
+.banner2 h2,
+.banner2 button{
+    font-weight: 500;
+    margin: 10px;
+}
+.banner2 h2{
+    font-size: 40px;
+}
+.banner2 button{
+    background-color: #e3e6f3;
+    color:#282828;
+    font-size:small;
+    padding:6px;
+    font-weight: 550;
+    border-radius: 3px;
+    
+}
+
+/*---------------------------------------------------------------- */
+
+.upper-cont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    margin-top:40px;
+
+} 
+.upper-cont section{
+    display: flex;
+    flex-direction: column;
+    color: #e3e6f3;
+    padding: 0 0 0 10px;
+    font-weight: 600;
+}
+.last-container .upper-cont #upper-left{
+    display: flex;
+    padding: 50px 0 0 10px;
+    justify-content: left;
+    align-items: start;
+    background-image: url(images/banner/b17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    min-width: 500px;
+    margin-right: 40px;
+    backdrop-filter: blur(8%);
+
+}
+.last-container .upper-cont #upper-right{
+    display: flex;
+    padding: 50px 0 0 10px;
+    justify-content: left;
+    align-items: start;
+    background-image: url(images/banner/b10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    min-width: 500px;
+    backdrop-filter: blur(8%);
+
+}
+#upper-left h3,
+#upper-right h3{
+    font-weight: 550;
+    font-size: small;
+}
+#upper-left h2,
+#upper-right h2{
+    font-size: 30px;
+}
+#upper-left h5,
+#upper-right h5{
+    font-size: smaller;
+}
+.upper-cont #upper-left button,
+.upper-cont #upper-right button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    color: rgb(248, 248, 248);
+    border: 1px solid rgb(248, 248, 248);
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+.upper-cont #upper-right button:hover,
+.upper-cont #upper-left button:hover {
+  background-color: #088178;
+  border: 1px solid #088178;
+}
+
+.last-container .bottom-cont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    margin-top:10px;
+}
+.last-container .bottom-cont section{
+    display: flex;
+    flex-direction: column;
+    color: #e3e6f3;
+    padding: 0 0 0 10px;
+    font-weight: 600;
+}
+#left h2,
+#right h2,
+#mid h2{
+    font-size: 30px;
+}
+#left h5,
+#right h5,
+#mid h5{
+    color: #771818;
+}
+.last-container .bottom-cont #left{
+    min-width: 370px;
+    height: 250px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    background-size: cover;
+    background-image: url(images/banner/b7.jpg);
+
+
+}
+.last-container .bottom-cont #mid{
+    min-width: 370px;
+    height: 250px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    background-size: cover;
+    background-image: url(images/banner/b4.jpg);
+
+
+}
+.last-container .bottom-cont #right{
+    min-width: 370px;
+    height: 250px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    background-size: cover;
+    background-image: url(images/banner/b18.jpg);
+
+
+}
+/* newsletter section styles */
+
+#newsletter {
+    background-image: url(images/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 180px;
+    background-color: #041e42;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 75px;
+  }
+  #newsletter .newsletter-text h3 {
+    color: white;
+    font-size: 30px;
+    padding: 0 0 15px 0;
+  }
+  #newsletter .newsletter-text h5 {
+    color: rgb(151, 151, 151);
+    font-size: 17px;
+  }
+  #newsletter .newsletter-text h5 span {
+    color: rgb(216, 182, 29);
+  }
+  #newsletter .form input {
+    padding: 20px;
+    width: 350px;
+    height: 56px;
+    background-color: #d1d0d0;
+    border-radius: 6px 0 0 6px;
+    font-size: 18px;
+  
+    border: none;
+    outline: none;
+    margin-right: -4px;
+    margin-top: 1px;
+  }
+  #newsletter .form button {
+    margin-left: 0;
+    padding: 20px;
+    border: none;
+    width: 120px;
+    background-color: #088178;
+    color: white;
+    font-size: 17px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+  }
+  
+  /* footer section styles */
+  
+  #footer{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 75px;
+    background-color: #ececec;
+  }
+  #footer p, #footer a{
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+  }
+  #footer a:hover{
+    color:#088178;
+  }
+  #footer .about a{
+    display: block;
+    padding:8px 0;
+  }
+  #footer .myaccount a{
+    display: block;
+    padding:8px 0;
+  }
+  #footer .download img{
+    border: 1px solid #08817969;
+    border-radius: 7px;
+  } 
